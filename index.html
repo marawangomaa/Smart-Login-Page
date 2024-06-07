@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="css/main.css"> <!--? main style sheet -->
+    <link rel="stylesheet" href="css/all.min.css"> <!--? fonts -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--? bootstrap style sheet -->
+</head>
+<body>
+    
+
+    <div class="logIngSystem  mt-5 d-flex justify-content-center align-items-center m-5">
+        <div class="container m-auto p-5 w-75">
+        <h1 class="text-info text-center mb-4">Smart Login System</h1>
+        <div id="signIn" class="signIn">
+            <div>
+                <input id="emailIn" class="mb-3 text-white bg-transparent form-control w-100" type="email" placeholder="Enter Your Email">
+                <input id="passwordIn" class="mb-5 text-white bg-transparent form-control w-100" type="password" placeholder="Enter Your Password">
+                <div id="logInError" class="d-none mb-2 text-center text-danger"></div>
+                <button id="logInBtn" class="btn btn-outline-info w-100 ">Log In</button>
+            </div>
+            <p class="text-center text-white pt-2">Don’t have an account?<span id="upBtn" href=""> Sign Up</span></p>
+        </div>
+        <div id="signUp" class="signUp d-none">
+            <div>
+                <input id="nameUp" class="mb-3 text-white bg-transparent form-control w-100" type="text" placeholder="Enter Your Name">
+                <input id="emailUp" class="mb-3 text-white bg-transparent form-control w-100" type="email" placeholder="Enter Your Email">
+                <input id="passwordUp" class="mb-5 text-white bg-transparent form-control w-100" type="password" placeholder="Enter Password">
+                <p id="success" class="d-none text-center text-success"></p>
+                <p id="error" class="d-none text-center text-danger"></p>
+                <button id="signUpBtn" class="btn btn-outline-info w-100 ">sign Up</button>
+            </div>
+            <p class="text-center text-white pt-2">You have an account?<span id="inBtn" href=""> Sign In</span></p>
+        </div>
+        
+    </div>
+    </div>
+    
+    
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

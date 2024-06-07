@@ -1,0 +1,40 @@
+body{
+    background: #24353f !important;
+    font-family: 'Titillium Web', sans-serif !important;
+}
+input::placeholder {
+
+    color: #b4b4b4 !important;
+}
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+a:hover{
+    text-decoration: underline !important;
+}
+button{
+    transition: all .2s !important;
+}
+span{
+    cursor: pointer;
+    position: relative;
+}
+span::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: -5px;
+    background-color: white;
+    transition: height .1s;
+}
+span:hover::before{
+    height: 2px;
+}
+.logingSystem{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.logInContant{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
